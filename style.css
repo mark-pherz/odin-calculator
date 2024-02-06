@@ -1,0 +1,126 @@
+:root {
+  --background-color: rgb(37, 37, 37);
+  --button-color: antiquewhite;
+  --button-hover-color: rgb(189, 177, 161);
+  --screen-background-color: #ebfafa;
+  --border-radius: 10px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  background-color: var(--background-color);
+  height: 500px;
+  width: 380px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  padding: 8px;
+  border-radius: 16px;
+}
+
+.screen {
+  grid-area: 1 / 1 / 2 / 5;
+  border-radius: var(--border-radius);
+  font-size: 2.25em;
+  background-color: var(--screen-background-color);
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding: 15px;
+}
+
+.btn {
+  height: 100%;
+  width: 100%;
+  background-color: var(--button-color);
+  border-radius: var(--border-radius);
+  line-height: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+
+.btn:hover {
+  background-color: var(--button-hover-color);
+}
+
+#btn-0 {
+  grid-area: 5 / 1 / 6 / 2;
+}
+
+#btn-1 {
+  grid-area: 4 / 1 / 5 / 2;
+}
+
+#btn-2 {
+  grid-area: 4 / 2 / 5 / 3;
+}
+
+#btn-3 {
+  grid-area: 4 / 3 / 5 / 4;
+}
+
+#btn-4 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+#btn-5 {
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+#btn-6 {
+  grid-area: 3 / 3 / 4 / 4;
+}
+
+#btn-7 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+#btn-8 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+#btn-9 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+#btn-plus {
+  grid-area: 4 / 4 / 5 / 5;
+}
+
+#btn-divide {
+  grid-area: 2 / 4 / 3 / 5;
+}
+
+#btn-multiply {
+  grid-area: 3 / 4 / 4 / 5;
+}
+
+#btn-minus {
+  grid-area: 5 / 4 / 6 / 5;
+}
+
+#btn-opposite {
+  grid-area: 5 / 3 / 6 / 4;
+}
+
+#btn-dot {
+  grid-area: 5 / 2 / 6 / 3;
+}
+
+#btn-reset {
+  grid-area: 6 / 4 / 7 / 5;
+}
+
+#btn-eval {
+  grid-area: 6 / 1 / 7 / 4;
+}

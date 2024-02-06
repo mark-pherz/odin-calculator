@@ -1,0 +1,126 @@
+* Universal CSS Reset */ html {
+  line-height: 1.15; /* Prevent layout inconsistencies in various browsers */
+  -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size in mobile browsers */
+  height: 100%; /* Set default height */
+}
+
+body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  min-height: 100vh; /* Ensure full height */
+  font-family: sans-serif; /* Change to your preferred font-family */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Use border-box model for all elements */
+}
+
+/* Set defaults for main display elements */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0; /* Remove default margin */
+  font-size: 100%; /* Use 100% for default font-size */
+  font-weight: normal; /* Use normal weight for headings */
+}
+
+/* Set more sensible defaults */
+p,
+ul,
+ol,
+dl,
+dt,
+dd,
+li,
+figure,
+figcaption,
+blockquote,
+details,
+summary {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* List styles removed to encourage use of class or inline styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove default link text decoration */
+a {
+  color: inherit; /* Inherit font color */
+  text-decoration: none;
+}
+
+/* Make sure images can't exceed their container */
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* Tables should not have additional spacing by default */
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+/* Make form elements consistent */
+input,
+button,
+textarea,
+select {
+  font: inherit; /* Specify font inheritance */
+  margin: 0; /* Remove default margin */
+}
+
+/* Avoid any hidden overflow by default */
+textarea {
+  overflow: auto;
+}
+
+/* Remove default border for iframes */
+iframe {
+  border: 0;
+}
+
+/* Ensure responsive viewport in mobile devices */
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* Additional resets you might consider */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* Remove inner padding and search cancel button in Safari and Chrome on macOS */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
