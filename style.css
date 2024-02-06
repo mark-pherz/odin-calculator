@@ -118,9 +118,9 @@ body {
 }
 
 #btn-reset {
-  grid-area: 6 / 4 / 7 / 5;
+  grid-area: 5 / 3 / 6 / 4;
 }
 
 #btn-eval {
-  grid-area: 6 / 1 / 7 / 4;
+  grid-area: 6 / 1 / 7 / 5;
 }
